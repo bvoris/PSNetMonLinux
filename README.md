@@ -38,8 +38,25 @@ tar -xvf ./powershell-7.1.3-linux-arm32.tar.gz -C ~/powershell
 sudo ~/powershell/pwsh -c New-Item -ItemType SymbolicLink -Path "/usr/bin/pwsh" -Target "$PSHOME/pwsh" -Force
 
 
-install apache2 http <BR />
+##install apache2 http
 https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
  <BR />
 sudo apt update <BR />
-sudo apt install apache2 -y <BR />
+sudo apt install apache2 -y <BR /> 
+
+Default apache install location:<BR />
+/var/www/html/<BR />
+
+<BR /><BR />
+##PSNetMon Install
+Clone PSNetMon from Github<BR />
+git clone https://github.com/bvoris/psnetmon <BR />
+
+Copy PSNetMon to default Apache location <BR />
+cp -r /home/pi/psnetmon/* /var/www/html <BR />
+
+Make scripts executable int the scripts folder<BR />
+chmod +x /var/www/html/scripts/*.ps1<BR />
+
+run script to test<BR />
+./New-Draft.ps1<BR />
