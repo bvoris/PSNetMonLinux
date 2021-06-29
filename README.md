@@ -3,8 +3,8 @@ Setting up a PSNetMon IoT Device in Linux
 
 
 # Update Raspbian
-sudo apt-get update
-sudo apt-get upgrade -y
+sudo apt-get update <BR />
+sudo apt-get upgrade -y <BR />
 
 Install powershell 
 https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7.1#raspbian
@@ -15,8 +15,8 @@ https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powersh
 sudo apt-get update
 
 # Install libunwind8 and libssl1.0
-# Regex is used to ensure that we do not install libssl1.0-dev, as it is a variant that is not required
-sudo apt-get install '^libssl1.0.[0-9]$' libunwind8 -y
+Regex is used to ensure that we do not install libssl1.0-dev, as it is a variant that is not required <BR />
+sudo apt-get install '^libssl1.0.[0-9]$' libunwind8 -y <BR />
 
 ###################################
 # Download and extract PowerShell
@@ -40,5 +40,5 @@ sudo ~/powershell/pwsh -c New-Item -ItemType SymbolicLink -Path "/usr/bin/pwsh" 
 # install apache2 http
 https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
 
-sudo apt update
-sudo apt install apache2 -y
+sudo apt update <BR />
+sudo apt install apache2 -y <BR />
