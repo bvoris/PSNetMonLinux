@@ -6,8 +6,9 @@ Setting up a PSNetMon IoT Device in Linux
 sudo apt-get update <BR />
 sudo apt-get upgrade -y <BR />
 
-Install powershell 
+Install powershell <BR /> 
 https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7.1#raspbian
+ <BR />
 ###################################
 # Prerequisites
 
@@ -37,8 +38,8 @@ tar -xvf ./powershell-7.1.3-linux-arm32.tar.gz -C ~/powershell
 sudo ~/powershell/pwsh -c New-Item -ItemType SymbolicLink -Path "/usr/bin/pwsh" -Target "$PSHOME/pwsh" -Force
 
 
-# install apache2 http
+install apache2 http <BR />
 https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
-
+ <BR />
 sudo apt update <BR />
 sudo apt install apache2 -y <BR />
