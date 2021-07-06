@@ -1,5 +1,12 @@
 # PSNetMonLinux
 Setting up a PSNetMon IoT Device in Linux
+Pre-requirements<BR />
+Updated version of Raspbian or Debian based Linux Distro <BR />
+.Net Runtime<BR />
+PowerShell<BR />
+Apache<BR />
+
+
 
 
 ### Update Raspbian
@@ -64,3 +71,5 @@ chmod +x /var/www/html/scripts/*.ps1<BR />
 ## Install .Net Runtime Library
 Reference: https://docs.microsoft.com/en-us/dotnet/iot/deployment<BR />
 curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel Current<BR />
+Additional Runtime components
+https://docs.microsoft.com/en-us/dotnet/core/install/linux-debian
