@@ -60,3 +60,7 @@ chmod +x /var/www/html/scripts/*.ps1<BR />
 
 ###run script to test<BR />
 ./PSNetMonInvoker.ps1<BR />
+
+## Install .Net Runtime Library
+Reference: https://docs.microsoft.com/en-us/dotnet/iot/deployment<BR />
+curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel Current<BR />
